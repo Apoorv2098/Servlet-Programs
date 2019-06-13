@@ -1,0 +1,16 @@
+import javax.servlet.http.*;
+import javax.servler.*;
+import java.io.*;
+import java.sql.*;
+
+public class ActualService extends HttpServlet
+{
+	public void service(ServletRequest req,ServletResponse res) throws ServletException,IOException
+	{
+		super.service(req,res);
+		res.setContentType("text/html");
+		PrintWriter out=res.getWriter();
+		out.println("<html><body>");
+		out.pritnln("Actual Service");	
+	}
+}
