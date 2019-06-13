@@ -11,7 +11,7 @@ public class DemoServlet extends GenericServlet
    PrintWriter out=res.getWriter();
    destroy();
    out.println("<html><body>");
-   out.println("Hello servlet via GenericServlet"+count);
+   out.println("servlet via GenericServlet"+count);
    out.println("<br>");
    out.println(this);
    
